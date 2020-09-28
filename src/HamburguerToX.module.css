@@ -1,0 +1,40 @@
+.hamburguerContainer{
+    display: none;
+    margin-right: 2rem;
+    transition: all 0.3s ease-out; 
+    position: relative;
+}
+
+
+.topBar, .middleBar, .bottonBar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    
+}
+
+.topBar{
+    top: 0px;
+}
+
+.middleBar{
+    top: 50%;
+}
+.bottonBar{
+    top: 100%;
+}
+
+
+.middleBarClicked{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+
+@media screen and (max-width: 960px){
+    .hamburguerContainer{
+        display: block;  
+    }
+}

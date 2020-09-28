@@ -1,0 +1,71 @@
+.Nav{
+    height: 10vh;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer{
+    display: flex;
+    font-size: 30px;
+    margin-left: 2rem;
+}
+
+.logo{
+    margin-left: 0.7rem;
+}
+
+.navMenu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.navMenu li{
+    margin-right: 1rem;
+}
+
+
+
+.sideMenu{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    background-color: red;
+    height: 90vh;
+    left: -100%;
+    transition: all 0.3s ease-out;
+    
+}
+
+.sideMenu ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.hamburguerActive{
+    transform: rotate(-90deg);
+}
+
+.menuActive{
+    left: 0;
+}
+
+@media screen and (max-width: 960px){
+    .navMenu{
+        display: none;
+
+    }
+
+    .hamburguer{
+        display: block;
+    }
+}
+
