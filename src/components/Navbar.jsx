@@ -27,7 +27,7 @@ function Navbar() {
                 <li className={styles.navItem}>Sobre</li>
                 <li className={styles.navItem}>Contato</li>
             </ul>
-            <HamburguerToX hamStyles={[30, 'black']}  showMenu={showMenu} setShowMenu={setShowMenu} hamburguerIsClicked={hamburguerIsClicked} setHamburguerIsClicked={setHamburguerIsClicked}/>
+            <HamburguerToX hamLineHeight={5} hamColor={'black'} hamContainerSize={30} showMenu={showMenu} setShowMenu={setShowMenu} hamburguerIsClicked={hamburguerIsClicked} setHamburguerIsClicked={setHamburguerIsClicked}/>
             
             <div className={cx(styles.sideMenu, { [styles.menuActive]: showMenu })}>
                 <ul >

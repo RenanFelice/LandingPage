@@ -8,7 +8,6 @@
 
 .topBar, .middleBar, .bottonBar {
     position: absolute;
-    height: 4px;
     width: 100%;
     border-radius: 10px;
     transition: all 0.3s ease-out;
@@ -19,11 +18,8 @@
     top: 0px;
 }
 
-.middleBar{
-    top: 50%;
-}
 .bottonBar{
-    top: 100%;
+    bottom: 0px;
 }
 
 
