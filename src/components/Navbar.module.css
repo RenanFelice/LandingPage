@@ -1,7 +1,15 @@
 .Nav{
     height: 10vh;
     width: 100%;
-    background-color: teal;
+    background-color: rgb(28, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarContainer{
+    height: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,21 +18,33 @@
 .logoContainer{
     display: flex;
     font-size: 30px;
-    margin-left: 2rem;
 }
 
 .logo{
+    display: flex;
+    align-items: center;
     margin-left: 0.7rem;
+    color: white;
+    font-weight: 700;
+}
+
+.logoImg{
+    color: white;
+    font-size: 3rem;
+    
 }
 
 .navMenu{
     display: flex;
+    align-items: center;
     list-style-type: none;
-    margin-right: 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .navMenu li{
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 
@@ -33,7 +53,7 @@
     position: absolute;
     top: 10vh;
     width: 100%;
-    background-color: red;
+    background-color: #242222;
     height: 90vh;
     left: -100%;
     transition: all 0.3s ease-out;
@@ -45,9 +65,60 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.sideMenu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.sideMenu li:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnContainer{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideMenuBtn{
+    font-size: 1.2rem;
+    height: 60px;
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.sideMenuBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbarBtn{
+    font-size: 1.2rem;
+    height: 50px;
+    width: 90px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
 .hamburguerActive{
@@ -67,5 +138,20 @@
     .hamburguer{
         display: block;
     }
+
+    .logoContainer{
+        margin-left: 2rem;
+    }
+    .navbarContainer{
+        width: 100%;
+    }
+
+    .logoImg{
+        font-size: 2rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    
 }
 

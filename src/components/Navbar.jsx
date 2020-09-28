@@ -16,26 +16,32 @@ function Navbar() {
 
     return (
         <nav className={styles.Nav}>
-            <div className={styles.logoContainer}>
-                <i className="fas fa-rocket"></i>
-                <div className={styles.logo}>Home</div>
-            </div>
+            <div className={styles.navbarContainer}>
+                <div className={styles.logoContainer}>
+                    <i className={cx("fas fa-rocket", styles.logoImg)}></i>
+                    <div className={styles.logo}>Home</div>
+                </div>
 
-            <ul className={styles.navMenu}>
-                <li className={styles.navItem}>Produtos</li>
-                <li className={styles.navItem}>Servicos</li>
-                <li className={styles.navItem}>Sobre</li>
-                <li className={styles.navItem}>Contato</li>
-            </ul>
-            <HamburguerToX hamLineHeight={5} hamColor={'black'} hamContainerSize={30} showMenu={showMenu} setShowMenu={setShowMenu} hamburguerIsClicked={hamburguerIsClicked} setHamburguerIsClicked={setHamburguerIsClicked}/>
-            
-            <div className={cx(styles.sideMenu, { [styles.menuActive]: showMenu })}>
-                <ul >
-                    <li className={styles.sideMenuItem}>Produtos</li>
-                    <li className={styles.sideMenuItem}>Servicos</li>
-                    <li className={styles.sideMenuItem}>Sobre</li>
-                    <li className={styles.sideMenuItem}>Contato</li>
+                <ul className={styles.navMenu}>
+                    <li className={styles.navItem}>Produtos</li>
+                    <li className={styles.navItem}>Servicos</li>
+                    <li className={styles.navItem}>Sobre</li>
+                    <button className={styles.navbarBtn}>Sign Up</button>
+                        
                 </ul>
+                <HamburguerToX hamLineHeight={5} hamColor={'white'} hamContainerSize={30} showMenu={showMenu} setShowMenu={setShowMenu} hamburguerIsClicked={hamburguerIsClicked} setHamburguerIsClicked={setHamburguerIsClicked} />
+
+                <div className={cx(styles.sideMenu, { [styles.menuActive]: showMenu })}>
+                    <ul >
+                        <li className={styles.sideMenuItem}>Produtos</li>
+                        <li className={styles.sideMenuItem}>Servicos</li>
+                        <li className={styles.sideMenuItem}>Sobre</li>
+                        <div className={styles.btnContainer}>
+                            <button className={styles.sideMenuBtn}>Sign Up</button>
+                        </div>
+                        
+                    </ul>
+                </div>
             </div>
         </nav>
     )
