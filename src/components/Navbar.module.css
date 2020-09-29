@@ -19,6 +19,9 @@
     display: flex;
     font-size: 30px;
 }
+.logoContainer:hover{
+    cursor: pointer;
+}
 
 .logo{
     display: flex;
@@ -37,14 +40,26 @@
 .navMenu{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
     color: white;
     font-weight: 700;
     font-size: 1.2rem;
+    height: 100%;
 }
 
+
 .navMenu li{
-    margin-right: 2rem;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+.navMenu li:hover{
+    border-bottom: 5px solid white;
+    cursor: pointer;
 }
 
 
@@ -57,7 +72,7 @@
     height: 90vh;
     left: -100%;
     transition: all 0.3s ease-out;
-    
+    z-index: 9999;
 }
 
 .sideMenu ul{
@@ -84,6 +99,7 @@
 .sideMenu li:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 .btnContainer{
@@ -105,12 +121,15 @@
     font-weight: 700;
 }
 
-.sideMenuBtn:hover{
+.sideMenuBtn:hover, .navbarBtn:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
+
 }
 
 .navbarBtn{
+    margin-left: 2rem;
     font-size: 1.2rem;
     height: 50px;
     width: 90px;
