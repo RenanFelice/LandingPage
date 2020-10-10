@@ -18,7 +18,8 @@ function Navbar() {
         <nav className={styles.Nav}>
             <div className={styles.navbarContainer}>
                 <div className={styles.logoContainer}>
-                    <i className={cx("fas fa-rocket", styles.logoImg)}></i>
+                    <i className={cx("fas fa-caravan", styles.logoImg)}></i>
+                    
                     <div className={styles.logo}>Home</div>
                 </div>
 
