@@ -14,9 +14,10 @@
     width: 100%;
     height: 100%;
     background-image: url('../../homeImg.jpg') ;
-    background-position: left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     animation: startAnimation 10s linear forwards reverse;
 }
 
