@@ -6,7 +6,10 @@
     width: 100%;
 }
 
-.cardContainer{
-    width: 80%;
+.cardContainerOne, .cardContainerTwo{
+    width: 90%;
     background-color: rgba(255, 0, 0, 0.267);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

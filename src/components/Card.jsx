@@ -1,10 +1,17 @@
 import React from 'react'
-import styles from './Card.module.css'
+import './Card.css'
 
-function Card() {
+
+function Card({customStyle, imgPath}) {
+
     return (
-        <div className={styles.card}>
-            card aqui
+        <div className={`card ${customStyle}`}>
+            <div className='cardImgContainer'>
+                <img className='cardImg' src={require(`../Images/img-${imgPath}.jpg`)} alt=""/>
+            </div>
+            <div className='cardBody'>
+                <p className='cardDesc'></p>
+            </div>
         </div>
     )
 }

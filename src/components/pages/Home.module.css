@@ -13,11 +13,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../../homeImg.jpg') ;
+    background-image: url('../../Images/homeImg.jpg') ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: 0% 100%;
     animation: startAnimation 10s linear forwards reverse;
 }
 
@@ -66,8 +67,16 @@
   }
 
 
-  @media screen and (max-width: 960px){
+  @media screen and (max-width: 450px){
     .homeBtn{
         width: 80%;
     }
   }
+
+
+  @media only screen and (orientation: landscape) and (max-width: 936px){
+    .home{
+        height: 80vh;
+        
+    }
+}
