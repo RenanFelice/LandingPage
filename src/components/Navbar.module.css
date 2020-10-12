@@ -1,5 +1,5 @@
 .Nav{
-    height: 10vh;
+    height: 80px;
     width: 100%;
     background-color: rgb(28, 27, 27);
     display: flex;
@@ -66,10 +66,10 @@
 
 .sideMenu{
     position: absolute;
-    top: 10vh;
+    top: 80px;
     width: 100%;
     background-color: #242222;
-    height: 90vh;
+    height: calc(100% - 80px);
     left: -100%;
     transition: all 0.3s ease-out;
     z-index: 9999;
@@ -176,14 +176,10 @@
     
 }
 
-@media only screen and (orientation: landscape) and (max-width: 936px){
-    .Nav{
-        height: 20vh;
-        
-    }
-
+@media only screen and (orientation: landscape) and (max-width: 778px){
+    
     .sideMenu{
-        top: 20vh;    
+        top: 80px;    
     }
 
     .sideMenu li {

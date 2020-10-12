@@ -14,6 +14,7 @@ function heroSection() {
                 <Card
                     customStyle='smaller'
                     imgPath={'9'}
+                    imgStyle={{height: "100%"}}
                 />
             </div>
             <div className={styles.cardContainerTwo}>

@@ -1,5 +1,5 @@
 .home{
-    height: 90vh;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,10 +73,3 @@
     }
   }
 
-
-  @media only screen and (orientation: landscape) and (max-width: 936px){
-    .home{
-        height: 80vh;
-        
-    }
-}

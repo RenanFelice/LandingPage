@@ -37,8 +37,20 @@
 
 }
 
-@media screen and (max-width: 643px){
+@media screen and (max-width: 626px){
     .card{
         height: 60vw;
     }
+}
+
+
+
+@media only screen and (orientation: landscape) and (max-width: 778px){
+    .card{    
+        height: 30vw;  
+    }
+
+    .cardImg{   
+        width: 100%;    
+    }    
 }
