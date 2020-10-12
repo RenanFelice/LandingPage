@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 
 
-function Card({customStyle, imgPath,imgStyle}) {
+function Card({customStyle, imgPath,imgStyle, text}) {
 
     return (
         <div className={`card ${customStyle}`}>
@@ -12,7 +12,9 @@ function Card({customStyle, imgPath,imgStyle}) {
                 src={require(`../Images/img-${imgPath}.jpg`)} alt=""/>
             </div>
             <div className='cardBody'>
-                <p className='cardDesc'></p>
+                <p className='cardDesc'>
+                    {text}
+                </p>
             </div>
         </div>
     )
