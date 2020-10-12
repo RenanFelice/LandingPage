@@ -54,6 +54,21 @@
     align-items: center;
 }
 
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 95px;
+    height: 30px;
+    background-color: rgb(27, 118, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
 
 @media screen and (max-width: 1200px){
     

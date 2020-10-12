@@ -10,12 +10,13 @@ function heroSection() {
                 <Card
                     customStyle='bigger'
                     imgPath={'2'}
+                    tag={'Luxo'}
                     text={'Viaje pelas ilhas de Bali em um cruseiro particular'}
                 />
                 <Card
                     customStyle='smaller'
                     imgPath={'9'}
-                    imgStyle={{height: "100%"}}
+                    tag={'Aventura'}
                     text={'Explore uma cachoeira escondida na floresta Amazônica'}
                 />
             </div>
@@ -23,11 +24,13 @@ function heroSection() {
                 <Card
                     customStyle='smaller'
                     imgPath={'4'}
+                    tag={'Aventura'}
                     text={'Experiencie uma partida de futebol no topo das montanhas do Himalaia'}
                 />
                 <Card
                     customStyle='bigger'
                     imgPath={'8'}
+                    tag={'Exótico'}
                     text={'Faça um lindo passeio de camelo no deserto do Saara com guias especializados'}
                 />
             </div>
