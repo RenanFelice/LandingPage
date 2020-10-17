@@ -7,6 +7,11 @@
 
 .contactInfo{
     margin: 4rem 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .adressContainer{
@@ -50,3 +55,37 @@
     color: rgb(37, 125, 226);
 }
 
+.aboutContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aboutBody{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.socialMediaContainer{
+    margin-top: 1.3rem;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 643px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutContainer{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+}

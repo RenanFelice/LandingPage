@@ -21,6 +21,18 @@ function Footer() {
                     <div className={styles.email}>renanfelice@gmail.com</div>
                 </div>
             </div>
+
+
+            <div className={styles.aboutContainer}>
+                <div className={styles.aboutTitle}>Sobre a empresa</div>
+                <div className={styles.aboutBody}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum, iure odio voluptas quasi asperiores laudantium voluptatibus fugit. Illo, cupiditate officiis iste consequatur eaque ratione.</div>
+                <div className={styles.socialMediaContainer}>
+                    <div className={styles.facebookIconContainer}><i class="fab fa-facebook-f"></i></div>
+                    <div className={styles.twitterIconContainer}><i class="fab fa-twitter"></i></div>
+                    <div className={styles.linkedinIconContainer}><i class="fab fa-linkedin-in"></i></div>
+                    <div className={styles.githubIconContainer}><i class="fab fa-github"></i></div>
+                </div>
+            </div>
         </div>
     )
 }

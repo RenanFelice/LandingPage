@@ -83,7 +83,7 @@
         font-size: 0.7rem;
     }
 }
-@media screen and (max-width: 645px){
+@media screen and (max-width: 643px){
     .card{
         height: 60vw;
     }
