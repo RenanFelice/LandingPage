@@ -1,0 +1,52 @@
+.footer{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(28, 27, 27);
+    display: flex;
+}
+
+.contactInfo{
+    margin: 4rem 3rem;
+}
+
+.adressContainer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.adressInfoContainer{
+    margin-left: 1rem;
+}
+
+.street{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.locationIconContainer, .emailIconContainer, .phoneIconContainer{
+    font-size: 2rem;
+}
+
+.phoneContainer{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.phoneNumber {
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.emailContainer{
+    display: flex;
+    align-items: center;
+}
+
+.email{
+    margin-left: 1rem;
+    color: rgb(37, 125, 226);
+}
+

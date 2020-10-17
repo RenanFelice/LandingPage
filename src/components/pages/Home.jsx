@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import HeroSection from '../HeroSection'
 import styles from './Home.module.css'
 
@@ -12,6 +13,7 @@ function Home() {
             <button className={styles.homeBtn}>Começar</button> 
         </div>
         <HeroSection/>
+        <Footer/>
         </>
     )
 }
